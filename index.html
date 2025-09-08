@@ -1,69 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teamba</title>
-   <link rel="stylesheet" href="teamba.css">           
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page title</title>
+  <link rel="stylesheet" href="in.css">
 </head>
-<body id="body">
-    <div id="sha">
-        </div>
-    <div class="me" id="mm" onclick="cli()">
-    <header>
-    <h3>Teamba Vlogs</h3>
-    <nav>
-        <button onclick="eury()" >EURY</button>
-        <button onclick="rain()">RAIN</button>
-        <button onclick="karl()">KARL</button>
-        <button onclick="ced()">CEDRIC</button>
-        <button onclick="khevin()">KHEVIN</button>
-    </nav>
-    </header>
-    </div>
-    <h1 id="bb">napipindot po yung bilog</h1>
-    
-    <h2 id="ha"></h2>
-    <br>
-    
-    <section id="bu">
-        
-        <!-- khevin -->
-        
-        <button class="opt" id="optv1" onclick="vid1()">video</button>
-        <button class="opt" id="optm1" onclick="music1()">Audio</button>
-   
-        <button class="opt" id="optv2" onclick="vid2()">video</button>
-        <button class="opt" id="optm2" onclick="music2()">Audio</button>
-   
-        <button class="opt" id="optv3" onclick="vid3()">video</button>
-        <button class="opt" id="optm3" onclick="music3()">Audio</button>
-   
-        <button class="opt" id="optv4" onclick="vid4()">video</button>
-        <button class="opt" id="optm4" onclick="music4()">Audio</button>
-   
-        <button class="opt" id="optv5" onclick="vid5()">video</button>
-        <button class="opt" id="optm5" onclick="music5()">Audio</button>
+<body>
   
-     
-        </section>
-    <div>
-       <video id="khv"src="./vid/khevin.mp4"controls></video>
-        <audio id="khm" src="audio/her.mp3" controls autoplay ></audio> 
-        
-         <video id="karl"src="./vid/karl.mp4"controls></video>
-        <audio id="karlm" src="./audio/Someday.mp3" controls autoplay ></audio> 
-        
-         <video id="ced"src="./vid/ced.mp4"controls></video>
-        <audio id="cedm" src="./audio/ced.mp3" controls autoplay ></audio> 
-        
-         <video id="eur"src="./vid/eury.mp4"controls></video>
-        <audio id="eurm" src="./audio/eury.mp3" controls autoplay ></audio> 
-        
-         <video id="rain"src="./vid/rain.mp4"controls></video>
-        <audio id="rainm" src="./audio/rain.mp3" controls autoplay ></audio> 
-        
-    </div>
-    <script src="ha.js"></script>
+  <div id="vid" class="container">
+      <h2 id="team">teamba</h2>
+    <video id="-1" src="./video/missu.mp4"></video> 
+    <video src="./video/khev.mp4" controls id="khev"></video>
+    <video src="./video/ced.mp4" controls id="cedv"></video>
+    <video src="./video/karl.mp4" controls id="karv"></video>
+    <video src="./video/eury.mp4" controls id="eurv"></video>
+    <video src="./video/rain.mp4" controls id="raiv"></video>
+    
+    <audio src="./audio/her.mp3" controls id="khev-a"></audio>
+  <audio src="./audio/ced.mp3" controls id="cedv-a"></audio>
+  <audio src="./audio/Someday.mp3" controls id="karv-a"></audio>
+  <audio src="./audio/eury.mp3" controls id="eurv-a"></audio>
+  <audio src="./audio/rain.mp3" controls id="raiv-a"></audio>
+  </div>
+
+  
+
+  <h4 id="counter">0</h4>
+  <div id="divx">
+    <button id="add" onclick="a()">+</button>
+    <button id="reset" onclick="r()">Reset</button>
+    <button id="sub" onclick="s()">-</button>
+  </div>
+  <br>
+  <script src="ma.js"></script>
 </body>
 </html>
