@@ -20,6 +20,10 @@ let sub=document.getElementById("sub");
 let div=document.getElementById("divx");
 let me=document.getElementById("team");
 let vi=document.getElementById("video"); 
+let po=[khev,karv,cedv,eurv,rainv].forEach(z=>{
+  
+  z.style.display="none";
+});
 function showVideo(){
  let vid = document.getElementById("vid");
   vid.classList.remove("show");
@@ -47,40 +51,65 @@ function showVideo(){
   case -1:
   us.style.display="flex";
   us.play();
-  team.textContent="Miss U";
+   k.style.display="flex";
+  us.onended=function(){
+    us.style.display="none";
+    team.textContent="Miss U";
+  };
+  
   break;
   case 1:
   khev.style.display="flex";
+   team.textContent="";
   khev.play();
-  k.style.display="flex";
-  team.textContent="KHEVIN";
+   khev.onended=function(){
+  khev.style.display="none";
+     
+ };
   break;
   case 2:
   cedv.style.display="flex";
   cedv.play();
   c.style.display="flex";
   team.textContent="CEDRICK";
+     cedv.onended=function(){
+  cedv.style.display="none";
+     
+ };
   break;
   case 3:
   karv.style.display="flex";
   karv.play();
   ka.style.display="flex";
   team.textContent="KARL";
+     karv.onended=function(){
+  karv.style.display="none";
+     
+ };
   break;
   case 4:
   eurv.style.display="flex";
   eurv.play();
   team.textContent="EURY";
   eu.style.display="flex";
+     eurv.onended=function(){
+  eurv.style.display="none";
+     
+ };
   break;
   case 5:
   rainv.style.display="flex";
   rainv.play();
   team.textContent="RAIN";
   ra.style.display="flex";
+     rainv.onended=function(){
+  rainv.style.display="none";
+     
+ };
   break;
   default:
-  team.textContent="Teamba"; 
+  team.textContent="Teamba";
+   break;
  }
 }
 function a() {
