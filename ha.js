@@ -1,3 +1,4 @@
+//count//
 let count=0;
 let g=document.getElementById("counter");
 //video//
@@ -20,33 +21,33 @@ let sub=document.getElementById("sub");
 let div=document.getElementById("divx");
 let me=document.getElementById("team");
 let vi=document.getElementById("video"); 
-let po=[khev,karv,cedv,eurv,rainv].forEach(z=>{
-  
-  z.style.display="none";
-});
+
 function showVideo(){
+//animation//
  let vid = document.getElementById("vid");
   vid.classList.remove("show");
+  //delay of animation//
   setTimeout(() => {
     vid.classList.add("show");
   }, 10);
+  //one at time music and video//
     let videos = document.querySelectorAll(".container video");
     let music = document.querySelectorAll(".container audio");
-
+     // hide music//
       music.forEach(v => {
         v.classList.remove("show");
         v.pause();
         v.currentTime = 0;
         v.style.display = "none";
       });
-      // Hide lahat ng video
+      // Hide video//
       videos.forEach(v => {
         v.classList.remove("show");
         v.pause();
         v.currentTime = 0;
         v.style.display = "none";
       });
- //if statement for counter//
+ //switcher for counter//
  switch(count){
   case -1:
   us.style.display="flex";
@@ -112,6 +113,7 @@ function showVideo(){
    break;
  }
 }
+//button function
 function a() {
 count++;
 if (count>5) {
