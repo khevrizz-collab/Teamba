@@ -51,7 +51,6 @@ function showVideo(){
   case -1:
   us.style.display="flex";
   us.play();
-   k.style.display="flex";
   us.onended=function(){
     us.style.display="none";
     team.textContent="Miss U";
@@ -60,7 +59,8 @@ function showVideo(){
   break;
   case 1:
   khev.style.display="flex";
-   team.textContent="";
+   team.textContent="KHEVIN";
+   k.style.display="flex";
   khev.play();
    khev.onended=function(){
   khev.style.display="none";
