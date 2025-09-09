@@ -2,11 +2,11 @@
 @keyframes fadeslideIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: rotate(180deg);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: rotate(360deg);
   }
 }
 

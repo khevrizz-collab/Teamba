@@ -72,7 +72,7 @@ function showVideo(){
   cedv.style.display="flex";
   cedv.play();
   c.style.display="flex";
-  team.textContent="CEDRICK";
+  team.textContent="CEDRIC";
      cedv.onended=function(){
   cedv.style.display="none";
      
