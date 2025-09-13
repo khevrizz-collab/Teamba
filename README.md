@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My vlog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #885656;
+        }
+
+        header {
+            background-color: #000000;
+            color: #f7def7;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .vlog-post {
+            margin-bottom: 20px;
+            background-color: #ffeded;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .vlog-post h2 {
+            color: #000000;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #000000;
+            color: #fdfdfd;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VLOG NI POGI</h1>
+        <p>YOW YOW WELCOME TO MY VLOG</p>
+    </header>
+
+    <main>
+        <section class="vlog-post">
+            <h2>A DAY IN MY LIFE AS A STI STUDENT VLOG</h2>
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="poginetoh.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>Watch my first vlog w my homies</p>
+            <H1>Comments:</H1>
+            <P>Name:Johanna</P>
+            <P>Grabe sobra pogii miss napo kita</P>
+            <P>Name:Eliniel</P>
+            <P>Grabe nag glow up kana miss u ex</P>
+            <p>Name:Daphnie</p>
+            <P>Ang hot mona kuyaaa</P>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; The most handsome guy in the world OMGGGG.</p>
+    </footer>
+
+</body>
+</html>
