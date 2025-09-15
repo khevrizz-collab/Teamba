@@ -1,81 +1,49 @@
-.me{
-     padding: 30px;
-     border-radius: 20px;    
-     transition: ease-in-out 1s;
-     background: linear-gradient(45deg, orange,#F08000,orangered,#36454F,gray,#E5E4E2);
-     background-size: 400% 400%;  
-     animation: gradientmove 20s ease infinite alternate,sha 20s ease infinite reverse;
-     clip-path: circle(10% at 50% 44.3%);   
-     margin-top: 20%;    
-&:hover {
-     clip-path: circle(70%);
-     background: pink;
+#container{
+    border: solid 3px black ;
+    border-radius: 10%;
+    width: 99%;
+    height: 90%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(pink,#fde4f2);
 }
+label{
+background:#f4b8da;
+ }  
+
+button{
+ width: 3.5rem;
+    height: 2.1rem;
+    border: none;
+    outline:  none;
 }
-      
-header{
-     padding: 5px;         
-     border-radius: 50%;
-     width: 100%;
-     color: white;
-     font-family:cursive;
+h3{
+    text-align: center;
+    color:#dd006494 ;
+    width: 40%;
+    height: 20%;
+    justify-content: center;
+    background: linear-gradient(pink,#fde4f2);
+     border: solid 3px black ;
+    border-radius: 10%;
 }
-body{
-      padding: 0;  
-      background-position:center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      transition: backgroun 2.6s ease;
-}
-nav{
-      margin-left: 20px;
-      display: flex;
-      text-align : center;
-      gap: 5%;
-      width: 20%;
-      height:8%;
+h5{
+    background: #fde4f2;
+    width: 40%;
     
 }
-audio,video{
-      display: none;
-      margin-left: auto;
-      margin-right: auto
+video,audio{
+  display: none;
+  width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px black solid;
+  
 }
-button{
-      border-radius: 10px;
-      border: none;
-      outline: none;
-}
-button::after{
-    background: red;
-}
-.opt{
-      display: none;
-      width: 18%;
-      height: 7%;
-     color:white;
-     background-color: rebeccapurple;
-     
-}
-#bu{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-}
-video{
-        width:80%;
-        height: 70%;
-    }
-@keyframes gradientmove{
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%;}
-  }
-@keyframes sha{
-    0% {box-shadow:0 0 50px red;}
-    25%{box-shadow:0 0 50px blue;}
-    50%{box-shadow:0 0 50px pink;}
-    75%{box-shadow:0 0 50px purple;}
-    100%{box-shadow:0 0 50px gold;}
- 
+form{
+   display: flex;
+    justify-content: center;
+    align-items: center;
 }
